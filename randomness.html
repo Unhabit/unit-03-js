@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons and Javascript</title>
+        <style>
+            .box{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box" class="box">
+            Dabookie bookie dookie
+        </div>
+        <button id="simple" onclick="changeColor('Black', 'Times New Roman', 'lavender')">Simple</button>
+        <button id="OldStyle" onclick="changeColor('Green', 'Old English Text MT', 'beige')">Old Style</button>
+        <button id="CrazyStyle" onclick="changeColor('Purple', 'Comic Sans MS', 'limegreen')">Crazy Style</button>
+        <script>
+            function changeColor(color, font, bgColor){
+                document.querySelector(".box").style.color = color;
+                document.querySelector(".box").style.fontFamily = font;
+                document.querySelector(".box").style.backgroundColor = bgColor;
+            }
+
+            box.style.fontWeight="Bold";
+            box.style.fontSize="50px";
+            simple.style.fontWeight="Bold";
+            simple.style.fontSize="20px";
+            OldStyle.style.fontWeight="Bold";
+            OldStyle.style.fontSize="20px";
+            CrazyStyle.style.fontWeight="Bold";
+            CrazyStyle.style.fontSize="20px";
+        </script>
+    </body>    
+</html>
