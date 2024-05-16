@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Special+Elite">
+
+    <style>
+        * {
+            font-family: 'Special Elite', cursive;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>MAD LIBS GAME YAY</h1>
+    <h3>This my my mad libs game made in Javascript. Its about FPS.</h3>
+
+    <img src="pinkpanther.png" alt="Pink panther">
+    <br>
+    <form id="madLibsForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+        <label for="color">Color:</label>
+        <input type="color" id="color"><br><br>
+        <label for="enemyname">Enemy name:</label>
+        <input type="text" id="enemyname"><br><br>
+        <label for="weapon">Weapon:</label>
+        <input type="text" id="weapon"><br><br>
+        <label for="map">Map:</label>
+        <input type="text" id="map"><br><br>
+        <button type="button" onclick="create()">Create</button>
+    </form>
+    <br>
+    <br>
+    <div id="story"></div>
+
+    <script>
+        function create() {
+            let name = document.getElementById("name").value;
+            let color = document.getElementById("color").value;
+            let enemyname = document.getElementById("enemyname").value;
+            let weapon = document.getElementById("weapon").value;
+            let map = document.getElementById("map").value;
+
+            let story = "As the sun set on the horizon, " + name + " stood amidst the ruins, ready for the final showdown. The sky turned a vibrant shade of " + color + ", casting an eerie glow over the battlefield. Suddenly, " + enemyname + " emerged from the shadows, wielding a fearsome " + weapon + ". With adrenaline coursing through veins, " + name + " charged into battle, navigating the treacherous terrain of " + map + ". Victory hung in the balance as each clash of steel echoed through the night.";
+
+            document.getElementById("story").innerHTML = story;
+            document.body.style.backgroundColor = color;
+            document.getElementById("story").style.color = black;
+        }
+    </script>
+</body>
+</html>
